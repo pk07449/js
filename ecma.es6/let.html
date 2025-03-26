@@ -10,6 +10,10 @@
  //variableAndFunction();
 <!-- Object Destructuring-->
   //objectArrayAndSpreadDestructuring();
+<!-- for/of->
+  //forOfLoop();
+<!-- DataTypes-->
+    mapSetClasses();
 
 function variableAndFunction() {
         letKeyword();
@@ -100,6 +104,71 @@ function objectArrayAndSpreadDestructuring() {
 
             console.log(year);
       }
+}
+
+function forOfLoop() {
+    forOfArray();
+    forOfString();
+    function forOfArray() {
+        const cars = ["BMW", "Volvo", "Mini"];
+        let text = "";
+
+        for (let x of cars) {
+            text += x + " ";
+        }
+        console.log(text);
+    }
+
+    function forOfString() {
+        let language = "JavaScript";
+        let text = "";
+
+        for (let x of language) {
+            text += x + " ";
+        }
+        console.log(text);
+    }
+}
+
+function mapSetClasses() {
+
+    maps();
+    sets();
+    classes();
+    function maps() {
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+        console.log(fruits);
+    }
+    function sets() {
+        // Create a Set
+        const letters = new Set();
+
+        // Add some values to the Set
+        letters.add("a");
+        letters.add("b");
+        letters.add("c");
+
+        console.log(letters);
+    }
+    function classes() {
+
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        const myCar1 = new Car("Tata", 2025);
+        const myCar2 = new Car("Mahindra", 2025);
+
+        console.log(myCar1);
+        console.log(myCar2);
+    }
 }
 </script>
 

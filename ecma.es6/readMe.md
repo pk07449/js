@@ -9,9 +9,10 @@ Object Destructuring
 For/of
     . String
     . Array
-Map Objects
-Set Objects
-Classes
+Data Types :
+    Map Objects
+    Set Objects
+    Classes
 Promises
 Symbol
 Default Parameters
