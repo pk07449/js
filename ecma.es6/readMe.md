@@ -7,6 +7,8 @@ Object Destructuring
     The [a,b] = Operator
     The ... Operator
 For/of
+    . String
+    . Array
 Map Objects
 Set Objects
 Classes
